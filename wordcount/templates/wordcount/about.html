@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+</head>
+{% extends 'home.html' %}
+<body>
+    {% block contents %}
+    <div style="text-align: center">
+        <h2>About</h2>
+        <p>안녕하세요, 이곳은 멋쟁이사자처럼의 첫번쨰 Django-Basic Project, WordCounter입니다.
+        </p>
+        <a href="{%url 'home'%}">Home으로 돌아가기</a>
+    </div>
+    {% endblock %}
+</body>
+</html>
